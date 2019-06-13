@@ -1,0 +1,53 @@
+{% assign current_page = (page.url | downcase | split: '/') %}
+
+<!-- main menu -->
+<div class="container py-3 py-lg-0">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-menu">
+
+    <a class="navbar-brand" href="/" id="logo">
+      <img src="/img/logo-56.png" height="56" width="56" />
+    </a>
+
+    <button class="navbar-toggler ml-auto hidden-sm-up float-xs-left" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <!-- li class="nav-item {% if current_page[1] == nil %} active {% endif %} flex-md-fill text-md-center">
+          <a class="nav-link" href="/">Home</a>
+        </li -->
+        <li class="nav-item dropdown flex-md-fill text-md-center">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            View Code
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="/code/Chapter01.html">Chapter 1</a>
+            <a class="dropdown-item" href="/code/Chapter02.html">Chapter 2</a>
+            <a class="dropdown-item" href="/code/Chapter03.html">Chapter 3</a>
+            <a class="dropdown-item" href="/code/Chapter04.html">Chapter 4</a>
+            <a class="dropdown-item" href="/code/Chapter05.html">Chapter 5</a>
+            <a class="dropdown-item" href="/code/Chapter06.html">Chapter 6</a>
+            <a class="dropdown-item" href="/code/Chapter07.html">Chapter 6</a>
+            <a class="dropdown-item" href="/code/Chapter08.html">Chapter 8</a>
+            <a class="dropdown-item" href="/code/Chapter09.html">Chapter 9</a>
+            <a class="dropdown-item" href="/code/Chapter10.html">Chapter 10</a>
+          </div>
+        </li>
+        <li class="nav-item {% if current_page[1] == 'downloads' %} active {% endif %} flex-md-fill text-md-center">
+          <a class="nav-link" href="https://github.com/aviks/Julia-High-Performance/archive/master.zip">Download Code</a>
+        </li>
+        <li class="nav-item flex-md-fill text-md-center">
+          <a class="nav-link" href="https://www.julialang.org">JuliaLang Home</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav navbar-right ml-auto">
+        <li class="nav-item text-md-center navbar-right">
+          <a class="btn btn-success" href="https://www.amazon.co.uk/Julia-High-Performance-Avik-Sengupta/dp/178829811X/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=1560172876&sr=8-6"  target="_blank">Buy</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+</div>
+<!-- end main menu -->
